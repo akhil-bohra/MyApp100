@@ -19,6 +19,22 @@ public class TestProduct {
 		System.out.println(cust);
 		//System.out.println("123");
 
+		double maxPrice=0.0;
+		String maxPricedStock="";
+		
+		// Let's use for loop
+		for (int i=0;i<add.length;i++)
+		{
+			if (add[i].getStockPrice()>maxPrice)
+			{
+				maxPrice=add[i].getStockPrice();
+				maxPricedStock=add[i].getStockName();
+			}
+			
+		}
+		
+		System.out.println("The stock name with the highest price is "+maxPricedStock+" and price is "+maxPrice);
+
 
 	}
 
